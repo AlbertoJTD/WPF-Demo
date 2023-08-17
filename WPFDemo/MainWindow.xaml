@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Center" Margin="0,201,0,0" TextWrapping="Wrap" Text="Hello world!" VerticalAlignment="Top" RenderTransformOrigin="1.238,0.251"/>
     </Grid>
 </Window>
