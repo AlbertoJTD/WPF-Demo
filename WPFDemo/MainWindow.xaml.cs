@@ -23,6 +23,25 @@ namespace WPFDemo
 		public MainWindow()
 		{
 			InitializeComponent();
+
+			// Button using code behind
+			Grid grid = new Grid();
+
+			this.Content = grid;
+
+			Button btn = new Button();
+			btn.Content = "Button code behind";
+			btn.Width = 200;
+			btn.Height = 200;
+
+			WrapPanel wrapPanel = new WrapPanel();
+			TextBlock textBlock = new TextBlock();
+			textBlock.Text = "I am a text block";
+
+			wrapPanel.Children.Add(textBlock); // Add TextBlock to Wrap Panel
+			btn.Content = wrapPanel;
+
+			grid.Children.Add(btn); // Add button to grid
 		}
 	}
 }

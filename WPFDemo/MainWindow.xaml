@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" Margin="0,201,0,0" TextWrapping="Wrap" Text="Hello world!" VerticalAlignment="Top" RenderTransformOrigin="1.238,0.251"/>
+        <Button HorizontalAlignment="Left" Margin="327,236,0,0" VerticalAlignment="Top" Height="35" Width="85" Content="XAML Button"/>
+
+        <Button>
+            <Button.Width>200</Button.Width>
+            <Button.Height>200</Button.Height>
+            <Button.Content>
+                <WrapPanel>
+                    <TextBlock Text="Panel 1"
+                               Background="Azure" />
+                    <TextBlock Text="Panel 2"
+                               Background="BlueViolet" />
+                    <TextBlock Text="Panel 3"
+                               Background="DarkBlue"/>
+                </WrapPanel>
+            </Button.Content>
+        </Button>
     </Grid>
 </Window>
