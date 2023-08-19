@@ -51,7 +51,12 @@ namespace WPFDemo
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			MessageBox.Show("Hi");
+            Console.WriteLine("Button pressed!");
+        }
+
+		private void Panel_Click(object sender, RoutedEventArgs e)
+		{
+            Console.WriteLine("Panel pressed");
         }
 	}
 }
