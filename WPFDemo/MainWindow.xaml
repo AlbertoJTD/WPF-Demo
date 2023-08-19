@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WPFDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <!--<Grid>
         <Button HorizontalAlignment="Left" Margin="327,236,0,0" VerticalAlignment="Top" Height="35" Width="85" Content="XAML Button"/>
 
         <Button>
@@ -23,5 +23,20 @@
                 </WrapPanel>
             </Button.Content>
         </Button>
-    </Grid>
+    </Grid>-->
+
+    <StackPanel>
+        <Button Content='Hello 1'
+                Width="300"
+                Margin="15"
+                HorizontalAlignment="Left"/>
+        <Button Content='Hello 2'
+                Width="300"
+                Margin="15"
+                Click="Button_Click"/>
+        <Button Content='Hello 3'
+                Width="300"
+                Margin="15"
+                HorizontalAlignment="Right"/>
+    </StackPanel>
 </Window>

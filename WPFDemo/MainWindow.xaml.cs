@@ -23,7 +23,7 @@ namespace WPFDemo
 		public MainWindow()
 		{
 			InitializeComponent();
-
+			/*
 			// Button using code behind
 			Grid grid = new Grid();
 
@@ -33,15 +33,25 @@ namespace WPFDemo
 			btn.Content = "Button code behind";
 			btn.Width = 200;
 			btn.Height = 200;
+			btn.Background = Brushes.Blue;
 
 			WrapPanel wrapPanel = new WrapPanel();
 			TextBlock textBlock = new TextBlock();
 			textBlock.Text = "I am a text block";
+			textBlock.Background = Brushes.Red;
 
 			wrapPanel.Children.Add(textBlock); // Add TextBlock to Wrap Panel
 			btn.Content = wrapPanel;
 
 			grid.Children.Add(btn); // Add button to grid
+			*/
+
+
 		}
+
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			MessageBox.Show("Hi");
+        }
 	}
 }
