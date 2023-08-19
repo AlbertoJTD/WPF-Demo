@@ -54,9 +54,14 @@ namespace WPFDemo
             Console.WriteLine("Button pressed!");
         }
 
-		private void Panel_Click(object sender, RoutedEventArgs e)
+		/*private void Panel_Click(object sender, RoutedEventArgs e)
 		{
             Console.WriteLine("Panel pressed");
-        }
+        }*/
+
+		private void Panel_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+		{
+			Console.WriteLine("Panel pressed");
+		}
 	}
 }

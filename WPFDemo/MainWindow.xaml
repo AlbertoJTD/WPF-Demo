@@ -25,7 +25,7 @@
         </Button>
     </Grid>-->
 
-    <StackPanel Name="Panel" ButtonBase.Click="Panel_Click">
+    <StackPanel Name="Panel" PreviewMouseLeftButtonDown="Panel_PreviewMouseLeftButtonDown">
         <Button Content='Hello 1'
                 Width="300"
                 Margin="15"
